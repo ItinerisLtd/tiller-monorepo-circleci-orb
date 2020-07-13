@@ -77,7 +77,7 @@ workflows:
           orb-name: itinerisltd/tiller-monorepo-circleci
           add-pr-comment: false
           publish-version-tag: true
-          ssh-fingerprints: TODO
+          ssh-fingerprints: 8c:65:ba:f9:7c:0f:a1:0a:b6:d4:b0:2b:4e:f1:c1:39
           fail-if-semver-not-indicated: true
           filters:
             branches:
