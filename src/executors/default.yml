@@ -2,15 +2,15 @@
 description: |
   Uses CircleCI's highly cached convenience images built for CI. Any available tag
   from this list can be used:
-  https://hub.docker.com/r/itinerisltd/tiller-circleci/tags
+  https://hub.docker.com/r/itinerisltd/tiller-monorepo-circleci/tags
 
 parameters:
   tag:
     type: string
     default: base
     description: |
-      Pick a specific itinerisltd/tiller-circleci image version tag:
-      https://hub.docker.com/r/itinerisltd/tiller-circleci/tags
+      Pick a specific itinerisltd/tiller-monorepo-circleci image version tag:
+      https://hub.docker.com/r/itinerisltd/tiller-monorepo-circleci/tags
 
 docker:
-  - image: itinerisltd/tiller-circleci:<<parameters.tag>>
+  - image: itinerisltd/tiller-monorepo-circleci:<<parameters.tag>>

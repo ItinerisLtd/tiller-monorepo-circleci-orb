@@ -1,13 +1,6 @@
 description: Clone the Trellis repo, set up ansible vault password and install ansible galaxy roles
 
 parameters:
-  trellis-repo:
-    type: string
-    description: trellis repository. Must be a SSH URL
-  trellis-branch:
-    type: string
-    description: trellis branch, commit hash or tag
-    default: master
   vault-password:
     type: env_var_name
     description: ansible vault password environment variable name
@@ -18,15 +11,11 @@ parameters:
     default: .vault_pass
 
 steps:
-  - run:
-      name: Clone Trellis repo
-      command: git clone --verbose --branch << parameters.trellis-branch >> --depth 1 << parameters.trellis-repo >> .
-      working_directory: trellis
   - restore_cache:
       keys:
-        - v4-tiller-circleci-prepare-trellis-{{ .Branch }}-{{ .Revision }}-
-        - v4-tiller-circleci-prepare-trellis-{{ .Branch }}-
-        - v4-tiller-circleci-prepare-trellis-
+        - v4-tiller-monorepo-circleci-prepare-trellis-{{ .Branch }}-{{ .Revision }}-
+        - v4-tiller-monorepo-circleci-prepare-trellis-{{ .Branch }}-
+        - v4-tiller-monorepo-circleci-prepare-trellis-
   - run:
       name: Set ansible vault password
       command: echo ${<< parameters.vault-password >>} > << parameters.vault-password-file-name >>
@@ -45,7 +34,7 @@ steps:
       command: trellis galaxy install
       working_directory: trellis
   - save_cache:
-      key: v4-tiller-circleci-prepare-trellis-{{ .Branch }}-{{ .Revision }}-{{ epoch }}
+      key: v4-tiller-monorepo-circleci-prepare-trellis-{{ .Branch }}-{{ .Revision }}-{{ epoch }}
       paths:
         - /tmp/trellis
         - ~/.cache

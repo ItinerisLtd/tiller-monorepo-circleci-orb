@@ -1,14 +1,14 @@
 <div align="center">
 
-# Tiller CircleCI Orb
+# Tiller Monorepo CircleCI Orb
 
 </div>
 
 <div align="center">
 
-[![CircleCI Orb Version](https://img.shields.io/badge/endpoint.svg?&style=flat-square&url=https://badges.circleci.io/orb/itinerisltd/tiller-circleci)](https://circleci.com/orbs/registry/orb/itinerisltd/tiller-circleci)
-[![CircleCI Build Status](https://img.shields.io/circleci/build/gh/ItinerisLtd/tiller-circleci-orb?style=flat-square)](https://circleci.com/gh/ItinerisLtd/tiller-circleci-orb)
-[![License](https://img.shields.io/github/license/itinerisltd/tiller-circleci-orb.svg?style=flat-square)](https://github.com/itinerisltd/tiller-circleci-orb/blob/master/LICENSE)
+[![CircleCI Orb Version](https://img.shields.io/badge/endpoint.svg?&style=flat-square&url=https://badges.circleci.io/orb/itinerisltd/tiller-monorepo-circleci)](https://circleci.com/orbs/registry/orb/itinerisltd/tiller-monorepo-circleci)
+[![CircleCI Build Status](https://img.shields.io/circleci/build/gh/ItinerisLtd/tiller-monorepo-circleci-orb?style=flat-square)](https://circleci.com/gh/ItinerisLtd/tiller-monorepo-circleci-orb)
+[![License](https://img.shields.io/github/license/itinerisltd/tiller-monorepo-circleci-orb.svg?style=flat-square)](https://github.com/itinerisltd/tiller-monorepo-circleci-orb/blob/master/LICENSE)
 [![Hire Itineris](https://img.shields.io/badge/Hire-Itineris-ff69b4.svg?style=flat-square)](https://www.itineris.co.uk/contact/)
 [![Twitter Follow @itineris_ltd](https://img.shields.io/twitter/follow/itineris_ltd?style=flat-square&color=1da1f2)](https://twitter.com/itineris_ltd)
 [![Twitter Follow @TangRufus](https://img.shields.io/twitter/follow/TangRufus?style=flat-square&color=1da1f2)](https://twitter.com/tangrufus)
@@ -17,7 +17,7 @@
 </div>
 
 <p align="center">
-  <strong>Deploy Trellis, Bedrock and Sage(optional) via CircleCI</strong>
+  <strong>Deploy monorepo Trellis, Bedrock and Sage(optional) via CircleCI</strong>
   <br />
   <br />
   Built with ♥ by <a href="https://www.itineris.co.uk/">Itineris</a>
@@ -27,11 +27,11 @@
 
 ## Usage
 
-Example use-cases are provided on the orb [registry page](https://circleci.com/orbs/registry/orb/itinerisltd/tiller-circleci#usage-examples). Source for these examples can be found within the [`src/examples`](./src/examples) directory.
+Example use-cases are provided on the orb [registry page](https://circleci.com/orbs/registry/orb/itinerisltd/tiller-monorepo-circleci#usage-examples). Source for these examples can be found within the [`src/examples`](./src/examples) directory.
 
 ## Resources
 
-[CircleCI Orb Registry Page](https://circleci.com/orbs/registry/orb/itinerisltd/tiller-circleci) - The official registry page of this orb for all versions, executors, commands, and jobs described.
+[CircleCI Orb Registry Page](https://circleci.com/orbs/registry/orb/itinerisltd/tiller-monorepo-circleci) - The official registry page of this orb for all versions, executors, commands, and jobs described.
 [CircleCI Orb Docs](https://circleci.com/docs/2.0/orb-intro/#section=configuration) - Docs for using and creating CircleCI Orbs.
 
 ---
@@ -59,15 +59,15 @@ Example use-cases are provided on the orb [registry page](https://circleci.com/o
 Thanks! Glad you like it. It's important to let us knows somebody is using this project. Please consider:
 
 - tweet something good with mentioning [@itineris_ltd](https://twitter.com/itineris_ltd) and [@TangRufus](https://twitter.com/tangrufus)
-- ★ star [the Github repo](https://github.com/itinerisltd/tiller-circleci-orb)
-- [👀 watch](https://github.com/itinerisltd/tiller-circleci-orb/subscription) the Github repo
+- ★ star [the Github repo](https://github.com/itinerisltd/tiller-monorepo-circleci-orb)
+- [👀 watch](https://github.com/itinerisltd/tiller-monorepo-circleci-orb/subscription) the Github repo
 - write tutorials and blog posts
 - **[hire Itineris](https://www.itineris.co.uk/services/)**
 
 ## Feedback
 
 **Please provide feedback!** We want to make this project as useful as possible.
-Please [submit an issue](https://github.com/itinerisltd/tiller-circleci-orb/issues/new) and point out what you do and don't like, or fork the project and [send pull requests](https://github.com/itinerisltd/tiller-circleci-orb/pulls/).
+Please [submit an issue](https://github.com/itinerisltd/tiller-monorepo-circleci-orb/issues/new) and point out what you do and don't like, or fork the project and [send pull requests](https://github.com/itinerisltd/tiller-monorepo-circleci-orb/pulls/).
 **No issue is too small.**
 
 ## Security Vulnerabilities
@@ -77,10 +77,10 @@ All security vulnerabilities will be promptly addressed.
 
 ## Credits
 
-[Tiller CircleCI Orb](https://github.com/itinerisltd/tiller-circleci-orb) is a [Itineris Limited](https://www.itineris.co.uk/) project and created by [Tang Rufus](https://www.typist.tech/).
+[Tiller Monorepo CircleCI Orb](https://github.com/itinerisltd/tiller-monorepo-circleci-orb) is a [Itineris Limited](https://www.itineris.co.uk/) project and created by [Tang Rufus](https://www.typist.tech/).
 
-Full list of contributors can be found [here](https://github.com/itinerisltd/tiller-circleci-orb/graphs/contributors).
+Full list of contributors can be found [here](https://github.com/itinerisltd/tiller-monorepo-circleci-orb/graphs/contributors).
 
 ## License
 
-[Tiller CircleCI Orb](https://github.com/itinerisltd/tiller-circleci-orb) is released under the [MIT License](https://opensource.org/licenses/MIT).
+[Tiller Monorepo CircleCI Orb](https://github.com/itinerisltd/tiller-monorepo-circleci-orb) is released under the [MIT License](https://opensource.org/licenses/MIT).

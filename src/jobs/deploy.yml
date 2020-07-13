@@ -1,23 +1,15 @@
 description: |
   Deploy Trellis, Bedrock and Sage(optional) via CircleCI
-  Expecting Trellis and Bedrock to be 2 separate repositories https://github.com/roots/trellis/issues/883#issuecomment-329052189
-  Expecting build steps do not require local Bedrock source code https://github.com/roots/trellis/pull/997 OR https://github.com/roots/trellis/pull/1030
+  Expecting Trellis and Bedrock to be a monorepo https://roots.io/docs/trellis/master/installation/#create-a-project
 
 parameters:
   # add-ssh-known-hosts
   known-hosts:
     type: string
     description: >
-      comma separated hosts you expected to connect include VCS and yourremote servers
+      comma separated hosts you expected to connect include VCS and the remote servers
 
   # prepare-trellis
-  trellis-repo:
-    type: string
-    description: trellis repository. Must be a SSH URL
-  trellis-branch:
-    type: string
-    description: trellis branch, commit hash or tag
-    default: master
   vault-password:
     type: env_var_name
     description: ansible vault password environment variable name
@@ -43,8 +35,8 @@ parameters:
   executor-tag:
     type: string
     description: |
-      Pick a specific itinerisltd/tiller-circleci image version tag:
-      https://hub.docker.com/r/itinerisltd/tiller-circleci/tags
+      Pick a specific itinerisltd/tiller-monorepo-circleci image version tag:
+      https://hub.docker.com/r/itinerisltd/tiller-monorepo-circleci/tags
     default: base
   setup:
     type: steps
@@ -63,6 +55,7 @@ steps:
   - print_dependency_versions
   - add_ssh_known_hosts:
       known-hosts: << parameters.known-hosts >>
+  - checkout
   - prepare_trellis:
       trellis-repo: << parameters.trellis-repo >>
       trellis-branch: << parameters.trellis-branch >>

@@ -5,7 +5,7 @@ orbs:
   # add your orb below, to be used in integration tests (note: a
   # @dev:alpha release must exist; if none exists, you'll need to
   # publish manually once before this worklow can succeed)
-  tiller-circleci: itinerisltd/tiller-circleci@<<pipeline.parameters.dev-orb-version>>
+  tiller-monorepo-circleci: itinerisltd/tiller-monorepo-circleci@<<pipeline.parameters.dev-orb-version>>
 
 # Pipeline parameters
 parameters:
@@ -44,7 +44,7 @@ workflows:
       # store CIRCLE_TOKEN as a project env var or Contexts resource
       # if using Contexts, add your context below
       - orb-tools/publish-dev:
-          orb-name: itinerisltd/tiller-circleci
+          orb-name: itinerisltd/tiller-monorepo-circleci
           requires: *orb_prep_jobs
 
       # trigger an integration workflow to test the
@@ -74,10 +74,10 @@ workflows:
       # be skipped.
       # e.g. [semver:patch] will cause a patch version to be published.
       - orb-tools/dev-promote-prod-from-commit-subject:
-          orb-name: itinerisltd/tiller-circleci
+          orb-name: itinerisltd/tiller-monorepo-circleci
           add-pr-comment: false
           publish-version-tag: true
-          ssh-fingerprints: 32:13:0c:b1:d5:94:8a:82:8e:14:84:52:db:d6:61:d9
+          ssh-fingerprints: TODO
           fail-if-semver-not-indicated: true
           filters:
             branches:
