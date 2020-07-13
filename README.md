@@ -18,7 +18,7 @@
 
 <p align="center">
   <strong>Deploy Trellis, Bedrock and Sage(optional) via CircleCI</strong><br/>
-  <strong>Expecting Trellis and Bedrock to be a <a href="https://roots.io/docs/trellis/master/installation/#create-a-project">monorepo</a></strong>
+  <strong>Expecting Trellis and Bedrock to be a monorepo</strong>
   <br />
   <br />
   Built with ♥ by <a href="https://www.itineris.co.uk/">Itineris</a>
