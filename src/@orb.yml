@@ -1,6 +1,8 @@
 version: 2.1
 
-description: Deploy monorepo Trellis, Bedrock and Sage(optional) via CircleCI
+description: |
+  Deploy monorepo Trellis, Bedrock and Sage(optional) via CircleCI
+  Expecting Trellis and Bedrock to be a monorepo https://roots.io/docs/trellis/master/installation/#create-a-project
 
 # This information will be displayed in the orb registry and is not mandatory.
 display:
