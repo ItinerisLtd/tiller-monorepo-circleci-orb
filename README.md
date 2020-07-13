@@ -17,7 +17,8 @@
 </div>
 
 <p align="center">
-  <strong>Deploy monorepo Trellis, Bedrock and Sage(optional) via CircleCI</strong>
+  <strong>Deploy Trellis, Bedrock and Sage(optional) via CircleCI</strong><br/>
+  <strong>Expecting Trellis and Bedrock to be a <a href="https://roots.io/docs/trellis/master/installation/#create-a-project">monorepo</a></strong>
   <br />
   <br />
   Built with ♥ by <a href="https://www.itineris.co.uk/">Itineris</a>
@@ -45,6 +46,10 @@ Example use-cases are provided on the orb [registry page](https://circleci.com/o
 ---
 
 ## FAQs
+
+### What if Trellis and Bedrock are in separate repositories?
+
+If you [structure Trellis and Bedrock in 2 separate repositories](https://github.com/roots/trellis/issues/883#issuecomment-329052189), use the [itinerisltd/tiller-circleci](https://github.com/ItinerisLtd/tiller-circleci-orb) orb instead.
 
 ### It looks awesome. Where can I find some more goodies like this
 
