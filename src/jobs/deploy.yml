@@ -57,8 +57,6 @@ steps:
       known-hosts: << parameters.known-hosts >>
   - checkout
   - prepare_trellis:
-      trellis-repo: << parameters.trellis-repo >>
-      trellis-branch: << parameters.trellis-branch >>
       vault-password: << parameters.vault-password >>
       vault-password-file-name: << parameters.vault-password-file-name >>
   - steps: << parameters.setup >>
