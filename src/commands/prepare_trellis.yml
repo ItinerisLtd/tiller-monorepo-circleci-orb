@@ -13,9 +13,9 @@ parameters:
 steps:
   - restore_cache:
       keys:
-        - v4-tiller-monorepo-circleci-prepare-trellis-{{ .Branch }}-{{ .Revision }}-
-        - v4-tiller-monorepo-circleci-prepare-trellis-{{ .Branch }}-
-        - v4-tiller-monorepo-circleci-prepare-trellis-
+        - v5-tiller-monorepo-circleci-prepare-trellis-{{ .Branch }}-{{ .Revision }}-
+        - v5-tiller-monorepo-circleci-prepare-trellis-{{ .Branch }}-
+        - v5-tiller-monorepo-circleci-prepare-trellis-
   - run:
       name: Set ansible vault password
       command: echo ${<< parameters.vault-password >>} > << parameters.vault-password-file-name >>
@@ -34,7 +34,7 @@ steps:
       command: trellis galaxy install
       working_directory: trellis
   - save_cache:
-      key: v4-tiller-monorepo-circleci-prepare-trellis-{{ .Branch }}-{{ .Revision }}-{{ epoch }}
+      key: v5-tiller-monorepo-circleci-prepare-trellis-{{ .Branch }}-{{ .Revision }}-{{ epoch }}
       paths:
         - /tmp/trellis
         - ~/.cache
