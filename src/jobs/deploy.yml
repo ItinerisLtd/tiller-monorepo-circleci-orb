@@ -35,8 +35,8 @@ parameters:
   executor-tag:
     type: string
     description: |
-      Pick a specific itinerisltd/tiller-monorepo-circleci image version tag:
-      https://hub.docker.com/r/itinerisltd/tiller-monorepo-circleci/tags
+      Pick a specific itinerisltd/tiller-circleci image version tag:
+      https://hub.docker.com/r/itinerisltd/tiller-circleci/tags
     default: base
   setup:
     type: steps
